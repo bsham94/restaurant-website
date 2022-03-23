@@ -1,0 +1,135 @@
+/* Fonts */
+@font-face { 
+  font-family: Lato; 
+	src: url('../assets/fonts/Lato-Regular.ttf'); 
+}
+ @font-face { 
+  font-family: PTSansNarrow; 
+	src: url('../assets/fonts/PTSansNarrow-Bold.ttf'); 
+}
+ @font-face { 
+  font-family: DancingScript; 
+	src: url('../assets/fonts/DancingScript-Bold.ttf'); 
+}
+/*Everything */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* scroll-behavior: smooth; */
+}
+html, body {
+  margin:0px;
+  height:100%;
+}
+body{
+  color: #555555;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 1.5em;
+}
+/* Info Bar and Navbar */
+.header{
+  color:white;
+  position: absolute;
+  top:0;
+  z-index: 999;
+  width: 100%;
+  
+}
+.info{  
+}
+.top-bar{
+  border-bottom: 1px solid rgba(255, 255,255,0.4);
+  padding: 0;
+}
+.top-bar .btn{
+  border:  none;
+  color:white;
+}
+.top-bar .btn:hover{
+  border:  none;
+  color:#ca3d26;
+  background-color: white;
+}
+.navbar
+{
+    background-color: none;
+}
+.navbar .container,
+#navbarScroll, .navbar-brand,
+#navbarScroll .navbar-nav,
+#navbarScroll .navbar-nav .nav-item .nav-link{
+  height: 100%;
+}
+#navbarScroll .navbar-nav .nav-item .nav-link{
+  padding-top:20px
+}
+.navbar-custom{
+  padding-top: 0px;
+  height: 80px;
+}
+.navbar-brand{
+  padding-top: 20px;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand {
+    color: #ffffff;
+}/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff;
+}/* change the color of active or hovered links */
+.navbar .navbar-nav .nav-item.active a{ 
+    color:#ca3d26;
+    border-top: 2px solid #ca3d26;
+}
+.navbar-custom .nav-item:hover .nav-link{
+    color: #ca3d26;
+}
+/* Main Page */
+.carousel, .carousel-inner, .carousel-item{
+  height: 100vh;
+}
+#carousel-item-one{
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../assets/img/restaurant1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#carousel-item-two{
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../assets/img/restaurant2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;  
+}
+#carousel-item-three{
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../assets/img/restaurant3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;  
+}
+.fancy-font{
+  font-family: "DancingScript", cursive;
+  font-size: 82px;
+}
+.regular-font{
+  text-transform: uppercase;
+  font-size: 65px;
+}
+.btn{
+  text-transform: uppercase;
+  border-radius: 0;
+}
+.carousel-caption .btn{
+  color: white;
+  border-color: white;
+}
+.carousel-caption .btn:hover{
+  color: white;
+  background-color: #ca3d26;
+}
+.idk{
+  height:100vh;
+}
