@@ -151,6 +151,9 @@ body{
   .navbar-toggler:focus{
   box-shadow: none;
 }
+  .info{
+    display: none;
+  }
   /* .navbar-custom.scrolled .nav-link:active,
   .navbar-custom.scrolled .nav-item:active
   {
