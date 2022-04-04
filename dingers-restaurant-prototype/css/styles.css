@@ -16,7 +16,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 html, body {
   margin:0px;
@@ -36,8 +36,7 @@ body{
   position: absolute;
   z-index: 999;
 }
-.info{  
-}
+
 .top-bar{
   border-bottom: 1px solid rgba(255, 255,255,0.4);
 }
@@ -74,16 +73,6 @@ body{
 .navbar-custom-collapsed{
   background-color: #555555;
 }
-
-/* .navbar-brand{
-  padding-top: 25px;
-} */
-/* .navbar-custom .navbar-brand {
-    color: #ffffff;
-}
-.navbar-custom .navbar-nav .nav-link {
-    color: #ffffff;
-} */
 /* change the color of active or hovered links */
 .navbar-dark .navbar-nav .nav-link.active{ 
     color:#ca3d26;
@@ -110,10 +99,6 @@ body{
 .navbar-dark .navbar-toggler:hover{
   background-color: #ca3d26;
 }
-/* .navbar-collapse.show,
-.navbar-collapse.collapsing{
-  padding: 0 50px 0 50px;
-} */
 .navbar-custom.scrolled {
   position: fixed;
   top:0;
@@ -154,30 +139,25 @@ body{
   .info{
     display: none;
   }
-  /* .navbar-custom.scrolled .nav-link:active,
-  .navbar-custom.scrolled .nav-item:active
-  {
-    color:#ca3d26;
-  } */
 }
 /* Main Page */
 .carousel, .carousel-inner, .carousel-item{
   height: 100vh;
 }
 #carousel-item-one{
-  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../assets/img/restaurant1.jpg");
+  background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url("../assets/img/restaurant1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 #carousel-item-two{
-  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../assets/img/restaurant2.jpg");
+  background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url("../assets/img/restaurant2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;  
 }
 #carousel-item-three{
-  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../assets/img/restaurant3.jpg");
+  background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url("../assets/img/restaurant3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;  
@@ -186,13 +166,11 @@ body{
   font-family: "DancingScript", cursive;
   white-space: nowrap;
   animation: slideDown 1.5s 1;
-  /* font-size: 5vw; */
 }
 .regular-font{
   text-transform: uppercase;
   white-space: nowrap;
   animation: grow 1.5s 1;
-  /* font-size: 3vw; */
 }
 .btn{
   text-transform: uppercase;
@@ -233,27 +211,7 @@ body{
   color: white;
   background-color: #ca3d26;
 }
-#about{
-  height: 60vh;
-  background-color: black;
-}
-
-#specials{
-  height: 60vh;
-  background-color: green;
-}
-#menus{
-  height: 60vh;
-  background-color: white;
-}
-#gallery{
-  height: 60vh;
-  background-color: white;
-}
-#footer{
-  height: 60vh;
-  background-color: purple;
-}
+/* Animations */
 @keyframes slideUp {
   0% {transform: translateY(80px);}
   100% {transform: translateY(0px);opacity:1;}
@@ -270,4 +228,144 @@ body{
 @keyframes spin {
   from { transform: rotateX(0deg); opacity:1;}
   to { transform: rotateX(-90deg); opacity:0;}
+}
+/* About */
+#about .container-lg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#about p{
+  font-size: 22px;
+  width:50%;
+}
+#about h1{
+  font-family: "DancingScript", cursive;
+  color: #ca3d26;
+}
+.big-letter{
+  float:left;
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: -4px;
+  margin-right: 10px;
+  line-height: 1;
+}
+/* #about h1::after{
+  background: rgba(0,0,0,0) url("../assets/img/red-icon.png");
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30px;
+} */
+/* Specials */
+#specials{
+
+  
+}
+#specials h1{
+  font-family: "DancingScript", cursive;
+  color: #ca3d26;
+  
+}
+
+/* Menus */
+#menus{
+
+  
+}
+#menus h1{
+  font-family: "DancingScript", cursive;
+  color: #ca3d26;
+}
+#menus .btn{
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+#menus .btn:hover{
+  background-color: #ca3d26;
+  color: white;
+  border-color: #ca3d26;
+}
+/* Reservations */
+#reservations{
+background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)), url("../assets/img/restaurant4.jpg");
+  color: #cacaca;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; 
+  font-family: "PTSansNarrow", sans-serif;
+}
+#reservations .container-lg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#reservations .btn{
+  background-color: white;
+  color: #ca3d26;
+  border:none;
+  font-weight: 200;
+  letter-spacing: 4px;
+  min-width: 200px;
+}
+#reservations .btn:hover{
+  background-color: #ca3d26;
+  color: white;
+  border:none;
+}
+#reservations h1{
+  letter-spacing: 5px;
+  font-size: 50px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+/* Gallery */
+#gallery{
+  
+  
+}
+#gallery h1{
+  font-family: "DancingScript", cursive;
+  color: #ca3d26;
+  
+}
+/* Footer */
+#footer{
+  background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)), url("../assets/img/bar1.jpg");
+  color: #cacaca;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; 
+}
+.footer-nav{
+  border-top:1px solid rgba(255, 255,255,0.4);
+}
+#footer img{
+  max-width: 300px;
+}
+#footer .logo{
+  margin-bottom: 25px;
+}
+#footer .contact,
+#footer .hours,
+#footer .social{
+  margin-bottom: 50px;
+}
+.social .btn{
+  border:  none;
+  color:white;
+}
+.social .btn:hover{
+  border:  none;
+  color:#ca3d26;
+  background-color: transparent;
+}
+.contact .btn{
+  color:#ca3d26;
+}
+.contact .btn:hover{
+  color:white;
 }

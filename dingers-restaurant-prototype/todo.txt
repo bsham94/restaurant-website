@@ -1,0 +1,33 @@
+Todo
+NavBar
+•	Stop navbar toggler from being pushed up into the top
+•	Make navbar collapse menu nicer
+•	Have the bar above active link touch top of navbar
+•	Active link in nav bar is a pixel lower than the rest.
+•   Add transition/animation when changing from the light navbar to the dark navbar
+Carousel
+•	Text and Button animations when disappearing
+•	Grey dotted Pattern
+•	Hovering doesnt stop the Carousel
+Site Navigation
+•	Carousel buttons go to correct section of the site
+Images
+•	Add the Grey dotted Pattern
+•	Have them move when scrolling
+Footer
+• Make it look nicer
+• Add links
+• Background image scrolling
+Menu Section
+• style buttons
+• buttons collapse into smaller rows
+• Add menu Picture
+• Add picture transition/animations
+About Us
+• picture
+• circle gradient thing?
+Specials
+• Carousel
+• Background image scrolling
+Gallery
+• everything

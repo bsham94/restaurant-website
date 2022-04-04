@@ -23,7 +23,6 @@ $(function () {
 // Adds or removes the active link class for the Navbar
 $(function () {
     $(".nav-link").click(function () {
-        console.log("hello world")
         // remove classes from all
         $(".nav-link").removeClass("active");
         // add class to the one we clicked
