@@ -1,0 +1,45 @@
+/* Footer */
+#footer {
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url("../assets/img/bar1.jpg");
+    color: #cacaca;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.footer-nav {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+#footer img {
+    max-width: 300px;
+}
+
+#footer .logo {
+    margin-bottom: 25px;
+}
+
+#footer .contact,
+#footer .hours,
+#footer .social {
+    margin-bottom: 50px;
+}
+
+.social .btn {
+    border: none;
+    color: white;
+}
+
+.social .btn:hover {
+    border: none;
+    color: #ca3d26;
+    background-color: transparent;
+}
+
+.contact .btn {
+    color: #ca3d26;
+}
+
+.contact .btn:hover {
+    color: white;
+}

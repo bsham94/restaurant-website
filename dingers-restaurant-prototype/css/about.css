@@ -1,0 +1,45 @@
+/* About */
+#about {
+    background: url("../assets/img/home_three_about_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#about .container-lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about p {
+    font-size: 22px;
+    width: 50%;
+}
+
+#about h1 {
+    font-family: "DancingScript", cursive;
+    color: #ca3d26;
+}
+
+.big-letter {
+    float: left;
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: -4px;
+    margin-right: 10px;
+    line-height: 1;
+}
+
+#about img {
+    max-width: 300px;
+}
+
+/* #about h1::after{
+  background: rgba(0,0,0,0) url("../assets/img/red-icon.png");
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30px;
+} */

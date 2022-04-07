@@ -1,0 +1,132 @@
+/* Main Page */
+#carousel .carousel,
+#carousel .carousel-inner,
+#carousel .carousel-item {
+    height: 100vh;
+}
+
+#carousel #carousel-item-one {
+    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("../assets/img/restaurant1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#carousel #carousel-item-two {
+    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("../assets/img/restaurant2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#carousel #carousel-item-three {
+    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("../assets/img/restaurant3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.fancy-font {
+    font-family: "DancingScript", cursive;
+    white-space: nowrap;
+    animation: slideDown 1.5s 1;
+}
+
+.regular-font {
+    text-transform: uppercase;
+    white-space: nowrap;
+    animation: grow 1.5s 1;
+}
+
+.btn {
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.btn:focus,
+.btn:active:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#carousel .carousel-caption {
+    top: 55%;
+}
+
+#carousel .carousel-caption .btn {
+    color: white;
+    border-color: white;
+    white-space: nowrap;
+    animation: slideUp 1.5s 1;
+}
+
+#carousel .carousel-caption .btn:hover,
+#carousel .carousel-caption .btn:active,
+#carousel .carousel-caption .btn:focus {
+    color: white;
+    background-color: #ca3d26;
+}
+
+.back-to-top {
+    background-color: #ca3d26;
+    z-index: 10;
+    bottom: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+.back-to-top:hover,
+.back-to-top:active,
+.back-to-top:focus {
+    background-color: black;
+    border: solid 1px white;
+}
+
+/* Animations */
+@keyframes slideUp {
+    0% {
+        transform: translateY(80px);
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-80px);
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: rotateX(-90deg);
+        opacity: 0;
+    }
+}

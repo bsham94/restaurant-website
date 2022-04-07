@@ -1,0 +1,32 @@
+/* Menus */
+#menus .container-lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menus h1 {
+    font-family: "DancingScript", cursive;
+    color: #ca3d26;
+}
+
+#menus .btn {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+#menus .btn:hover,
+#menus .btn.active {
+    background-color: #ca3d26;
+    color: white;
+    border-color: #ca3d26;
+}
+
+#appetizers,
+#hand-helds,
+#entrees,
+#wine {
+    display: none;
+}

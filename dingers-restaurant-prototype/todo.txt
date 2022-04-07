@@ -5,6 +5,7 @@ NavBar
 •	Have the bar above active link touch top of navbar
 •	Active link in nav bar is a pixel lower than the rest.
 •   Add transition/animation when changing from the light navbar to the dark navbar
+•   Change the active button when scrolling throught sections
 Carousel
 •	Text and Button animations when disappearing
 •	Grey dotted Pattern
@@ -24,10 +25,10 @@ Menu Section
 • Add menu Picture
 • Add picture transition/animations
 About Us
-• picture
-• circle gradient thing?
+
 Specials
-• Carousel
+• Fix the positioning of items in the Carousel
+• Figure out a height
 • Background image scrolling
 Gallery
 • everything
