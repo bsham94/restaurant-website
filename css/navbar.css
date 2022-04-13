@@ -28,11 +28,15 @@
     z-index: 999;
 }
 
-/* #navbarScroll .navbar-nav .nav-item .nav-link{
-  padding-top:25px
-} */
 .navbar-custom {
     padding: 0px;
+    min-height: 80px;
+}
+
+.navbar-brand {
+    padding: 0 15px;
+    height: 80px;
+    line-height: 80px;
 }
 
 .navbar-custom-collapsed {
@@ -57,7 +61,6 @@
 }
 
 .navbar-custom.scrolled .navbar-toggler {
-    color: black;
     border-color: black;
 }
 
@@ -80,6 +83,10 @@
     transition: background-color 200ms linear;
 }
 
+.navbar-custom.scrolled .navbar-toggler.collapsed .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 .navbar-custom.scrolled .nav-link,
 .navbar-custom.scrolled a {
     color: black;
@@ -90,11 +97,30 @@
     padding-left: 1.0rem;
 }
 
-.navbar-collapse.show {}
+@media only screen and (min-width: 992px) {
+    .nav-link {
+        padding-top: 25px;
+    }
 
-@media (max-width: 992px) {
+    .navbar-dark .navbar-nav .nav-link.active {
+        padding-top: 23px;
+    }
+
+    .navbar-collapse,
+    .navbar-collapse .navbar-nav,
+    .nav-item,
+    .nav-link {
+        min-height: 80px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
     .navbar-custom {
         background-color: #212324;
+    }
+
+    .navbar-nav {
+        margin-top: 7.5px;
     }
 
     .navbar-custom .scrolled {

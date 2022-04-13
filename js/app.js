@@ -1,20 +1,17 @@
 //Changes the styling of the Navbar after you scroll down
 $(function () {
+    changeNavColour();
+});
+$(function () {
     $(document).on('scroll', () => {
-        var $top_bar = $(".top-bar");
-        var $nav = $(".navbar-custom");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $top_bar.height());
+        changeNavColour();
     });
 });
-
-$(function () {
+function changeNavColour() {
     var $top_bar = $(".top-bar");
     var $nav = $(".navbar-custom");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $top_bar.height());
-
-});
-
-
+}
 //Adds the return to top button after scrolling
 $(function () {
     $(document).on('scroll', () => {
@@ -38,6 +35,7 @@ $(function () {
         $(e.target).addClass("active");
     });
 });
+
 // $("#contactbtn").click(function () {
 //     $('html,body').animate({
 //         scrollTop: $("#footer").offset().top
