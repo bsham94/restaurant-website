@@ -41,7 +41,7 @@
 
 .navbar-brand .logo {
     max-height: 80px;
-    width: 80%;
+    /* max-width: 160px; */
 }
 
 .navbar-brand .logo.hidden {
@@ -147,6 +147,11 @@
 
     .navbar-dark .navbar-nav .nav-link.active {
         border: 0;
+    }
+
+    .navbar-brand .logo {
+        /* max-height: 80px; */
+        max-width: 160px;
     }
 
     .navbar-toggler:focus {
