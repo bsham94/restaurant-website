@@ -1,33 +1,15 @@
 //Changes the styling of the Navbar after you scroll down
-$(function () {
-    changeNavColour();
-});
-$(function () {
-    $(document).on('scroll', () => {
-        changeNavColour();
-    });
-});
-function changeNavColour() {
-    var $top_bar = $(".top-bar");
-    var $nav = $(".navbar-custom");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $top_bar.height());
-}
-//Adds the return to top button after scrolling
-$(function () {
-    $(document).on('scroll', () => {
-        var $home = $("#home");
-        var $returnTopButton = $(".back-to-top");
-        if ($(this).scrollTop() > $home.height() / 3) {
-            $returnTopButton.fadeIn("slow");
-        }
-        else {
-            $returnTopButton.fadeOut("slow");
-        }
+// $(function () {
+//     changeNavColour();
+// });
+// $(function () {
+//     $(document).on('scroll', () => {
+//         changeNavColour();
+//     });
+// });
 
-    });
-});
 // Adds or removes the active link class for the Navbar
-$(function () {
+$(() => {
     $(".nav-link").on('click', (e) => {
         // remove classes from all
         $(".nav-link").removeClass("active");
@@ -35,15 +17,82 @@ $(function () {
         $(e.target).addClass("active");
     });
 });
+//Smooth Scroll
+$(() => {
+    changeNavColour();
+    showBackToTop()
+    $(document).on("scroll", onScroll);
+    $('.navbar-custom a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
 
-// $("#contactbtn").click(function () {
-//     $('html,body').animate({
-//         scrollTop: $("#footer").offset().top
-//     }, 5000);
-// });
+        $('.nav-link').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+        //Gets href part of a tag
+        var target = this.hash;
+        $target = $(target);
+        $('html, body').stop().animate(
+            {
+                'scrollTop': $target.offset().top + 5
+            },
+            {
+                duration: 700,
+                easing: 'swing',
+                progress: (a, p, mR) => {
+                    if (mR <= 550) {
+                        if ($(".navbar-custom scrolled")) {
+                            console.log("hello world");
+                            $(".navbar-custom").addClass("scrolled");
+                        }
+                    }
+                },
+                complete: () => {
+                    window.location.hash = target;
+                    $(document).on("scroll", onScroll);
+                }
+            });
 
+    });
+});
+
+onScroll = () => {
+    changeNavColour();
+    showBackToTop();
+    var scrollPos = $(document).scrollTop();
+    $('.navbar-custom a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() >= scrollPos) {
+            $('.navbar-custom ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else {
+            currLink.removeClass("active");
+        }
+    });
+}
+//Change Navbar Colour
+changeNavColour = () => {
+    $(".navbar-custom").toggleClass('scrolled', $(this).scrollTop() > $(".top-bar").height());
+    $("#logo-light").toggleClass('hidden', $(this).scrollTop() > $(".top-bar").height());
+    $("#logo-dark").toggleClass('hidden', $(this).scrollTop() < $(".top-bar").height());
+}
+
+//Adds the return to top button after scrolling
+showBackToTop = () => {
+    var $home = $("#home");
+    var $returnTopButton = $(".back-to-top");
+    if ($(this).scrollTop() > $home.height() / 3) {
+        $returnTopButton.fadeIn("slow");
+    }
+    else {
+        $returnTopButton.fadeOut("slow");
+    }
+};
 // Menu Animations
-$(function () {
+$(() => {
     $('#covid-19-takeout-btn, #appetizers-btn, #handhelds-btn, #entrees-btn, #wine-btn').on('click', (e) => {
         $("#menus ul li").removeClass("active");
         switch (e.target.id) {
@@ -65,21 +114,21 @@ $(function () {
                 $("#handhelds-btn").addClass("active");
                 if ($("#hand-helds:hidden")) {
                     $("#menu-area .menu-item:visible").fadeOut('slow');
-                    $("#hand-helds").fadeIn();
+                    $("#hand-helds").fadeIn('slow');
                 }
                 break;
             case 'entrees-btn':
                 $("#entrees-btn").addClass("active");
                 if ($("#entrees:hidden")) {
                     $("#menu-area .menu-item:visible").fadeOut('slow');
-                    $("#entrees").fadeIn();
+                    $("#entrees").fadeIn('slow');
                 }
                 break;
             case 'wine-btn':
                 $("#wine-btn").addClass("active");
                 if ($("#wine:hidden")) {
                     $("#menu-area .menu-item:visible").fadeOut('slow');
-                    $("#wine").fadeIn();
+                    $("#wine").fadeIn('slow');
                 }
                 break;
         }

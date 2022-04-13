@@ -32,3 +32,5 @@ Specials
 • Background image scrolling
 Gallery
 • everything
+buttons
+• Remove blue active
