@@ -6,6 +6,7 @@
     background-size: cover;
     background-position: center center;
     font-family: "PTSansNarrow", sans-serif;
+    height: 500px;
 }
 
 #reservations .container-lg {
@@ -29,7 +30,7 @@
     border: none;
 }
 
-#reservations h1 {
+#reservations h2 {
     letter-spacing: 5px;
     font-size: 50px;
     margin-bottom: 15px;

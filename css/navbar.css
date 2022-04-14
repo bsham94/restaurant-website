@@ -30,17 +30,17 @@
 
 .navbar-custom {
     padding: 0px;
-    min-height: 80px;
+    min-height: 100px;
 }
 
 .navbar-brand {
     padding: 0 15px;
-    height: 80px;
-    line-height: 80px;
+    height: 100px;
+    line-height: 100px;
 }
 
 .navbar-brand .logo {
-    max-height: 80px;
+    max-height: 78px;
     /* max-width: 160px; */
 }
 
@@ -108,18 +108,23 @@
 
 @media only screen and (min-width: 992px) {
     .nav-link {
-        padding-top: 25px;
+        padding-top: 35px;
     }
 
     .navbar-dark .navbar-nav .nav-link.active {
-        padding-top: 23px;
+        padding-top: 33px;
+    }
+
+    .navbar-brand .logo {
+        display: flex;
+        padding-top: 20px;
     }
 
     .navbar-collapse,
     .navbar-collapse .navbar-nav,
     .nav-item,
     .nav-link {
-        min-height: 80px;
+        min-height: 100px;
     }
 }
 
@@ -132,12 +137,22 @@
         margin-top: 7.5px;
     }
 
-    .navbar-custom .scrolled {
+    .navbar-custom.scrolled {
         position: fixed;
         top: 0;
         background-color: white;
         width: 100%;
         transition: background-color 200ms linear;
+
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid gray;
+        border-top-style: ridge;
+    }
+
+    .navbar-custom.scrolled .navbar-collapse {
+        border-top: 1px solid black;
     }
 
     .navbar-custom.scrolled .nav-link,
