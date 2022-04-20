@@ -1,13 +1,3 @@
-// Adds or removes the active link class for the Navbar
-// $(() => {
-//     $(".nav-link").on('click', (e) => {
-//         // remove classes from all
-//         $(".nav-link").removeClass("active");
-//         // add class to the one we clicked
-//         $(e.target).addClass("active");
-//     });
-// });
-//Smooth Scroll
 $(() => {
     changeNavColour();
     showBackToTop();
@@ -94,6 +84,20 @@ $(() => {
 });
 
 
+
+// $(() => {
+//     var homeCarousel = $('#carousel');
+//     var carousel = new bootstrap.Carousel(homeCarousel);
+// })
+// Adds or removes the active link class for the Navbar
+// $(() => {
+//     $(".nav-link").on('click', (e) => {
+//         // remove classes from all
+//         $(".nav-link").removeClass("active");
+//         // add class to the one we clicked
+//         $(e.target).addClass("active");
+//     });
+// });
 //Smooth Scroll
 // $(() => {
 //     changeNavColour();
