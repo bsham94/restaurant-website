@@ -5,6 +5,23 @@
     height: 100vh;
 }
 
+.carousel-caption h1 {
+    font-size: 82px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.carousel-caption h2 {
+    font-size: 65px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.carousel-caption h2 span {
+    font-weight: 700;
+}
+
 #carousel #carousel-item-one {
     background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("../assets/img/restaurant1.jpg");
     background-repeat: no-repeat;
@@ -50,7 +67,7 @@
 }
 
 #carousel .carousel-caption {
-    top: 55%;
+    top: 57%;
 }
 
 #carousel .carousel-caption .btn {
@@ -82,6 +99,38 @@
 .back-to-top:focus {
     background-color: black;
     border: solid 1px white;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .carousel-caption h1 {
+        font-size: 37px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 52px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .carousel-caption h1 {
+        font-size: 62px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 45px;
+    }
 }
 
 /* Animations */

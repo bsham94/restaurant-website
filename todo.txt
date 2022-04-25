@@ -1,36 +1,33 @@
 Todo
+Section Titles
+• Pick a better text size for mobile
 NavBar
-•	Stop navbar toggler from being pushed up into the top
-•	Make navbar collapse menu nicer
-•	Have the bar above active link touch top of navbar
-•	Active link in nav bar is a pixel lower than the rest.
 •   Add transition/animation when changing from the light navbar to the dark navbar
-•   Change the active button when scrolling throught sections
 Carousel
 •	Text and Button animations when disappearing
 •	Grey dotted Pattern
 •	Hovering doesnt stop the Carousel
+•   Center text better
+•   Have text fix mobile section
 Site Navigation
 •	Carousel buttons go to correct section of the site
 Images
 •	Add the Grey dotted Pattern
 •	Have them move when scrolling
 Footer
-• Make it look nicer
 • Add links
 • Background image scrolling
+• Ipad size bottom linkers dont align
 Menu Section
 • style buttons
 • buttons collapse into smaller rows
 • Add menu Picture
 • Add picture transition/animations
 About Us
-
+• Fix the mobile layout
 Specials
 • Fix the positioning of items in the Carousel
 • Figure out a height
 • Background image scrolling
 Gallery
 • everything
-buttons
-• Remove blue active
