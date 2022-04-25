@@ -9,6 +9,7 @@
 #menus h1 {
     font-family: "DancingScript", cursive;
     color: #ca3d26;
+    font-size: 60px;
 }
 
 #menus .btn {
@@ -29,4 +30,11 @@
 #entrees,
 #wine {
     display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    #menus h1 {
+        font-size: 36px;
+        padding-bottom: 0;
+    }
 }

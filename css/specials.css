@@ -24,6 +24,7 @@
 #specials h1 {
     font-family: "DancingScript", cursive;
     color: #ca3d26;
+    font-size: 60px;
 }
 
 #specials .carousel-caption {
@@ -51,4 +52,11 @@
 .promotion-details .btn {
     color: #ca3d26;
     border-color: #ca3d26;
+}
+
+@media only screen and (max-width: 767px) {
+    #specials h1 {
+        font-size: 36px;
+        padding-bottom: 0;
+    }
 }

@@ -4,5 +4,12 @@
 #gallery h1 {
     font-family: "DancingScript", cursive;
     color: #ca3d26;
+    font-size: 60px;
+}
 
+@media only screen and (max-width: 767px) {
+    #gallery h1 {
+        font-size: 36px;
+        padding-bottom: 0;
+    }
 }
