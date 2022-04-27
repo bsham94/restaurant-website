@@ -1,10 +1,12 @@
 /* Footer */
 #footer {
     background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("../assets/Website_Images/Little-Dings-Hats.jpg");
+    /* background: url("../assets/Website_Images/Little-Dings-Hats.jpg"); */
     color: #cacaca;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
 }
 
 .footer-nav {

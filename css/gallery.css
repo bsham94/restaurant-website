@@ -1,14 +1,23 @@
 /* Gallery */
-#gallery img {
+#gallery .content img {
     width: 400px;
     height: 300px;
     object-fit: cover;
+}
+
+#gallery span {
+    display: inline-block;
+}
+
+.red-icon {
+    width: 80%;
 }
 
 #gallery h1 {
     font-family: "DancingScript", cursive;
     color: #ca3d26;
     font-size: 60px;
+    margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -17,7 +26,11 @@
         padding-bottom: 0;
     }
 
-    #gallery img {
+    .red-icon {
+        width: 50%;
+    }
+
+    #gallery .content img {
         max-height: 200px;
         object-fit: cover;
     }

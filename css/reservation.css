@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     font-family: "PTSansNarrow", sans-serif;
     height: 500px;
 }
