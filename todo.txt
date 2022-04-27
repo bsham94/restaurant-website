@@ -23,8 +23,6 @@ Menu Section
 • buttons collapse into smaller rows
 • Add menu Picture
 • Add picture transition/animations
-About Us
-• Fix the mobile layout
 Specials
 • Fix the positioning of items in the Carousel
 • Figure out a height

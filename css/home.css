@@ -23,21 +23,21 @@
 }
 
 #carousel #carousel-item-one {
-    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("../assets/img/restaurant1.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .60), rgba(0, 0, 0, .60)), url("../assets/Website_Images/little-dings-restaraunt.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 #carousel #carousel-item-two {
-    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("../assets/img/restaurant2.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .60), rgba(0, 0, 0, .60)), url("../assets/Website_Images/st-patrick-green-beer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 #carousel #carousel-item-three {
-    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("../assets/img/restaurant3.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .60), rgba(0, 0, 0, .60)), url("../assets/Website_Images/chicken.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

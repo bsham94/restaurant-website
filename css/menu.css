@@ -18,6 +18,10 @@
     border-color: black;
 }
 
+#menus ul {
+    padding: 0;
+}
+
 #menus .btn:hover,
 #menus .btn.active {
     background-color: #ca3d26;
@@ -36,5 +40,9 @@
     #menus h1 {
         font-size: 36px;
         padding-bottom: 0;
+    }
+
+    #menus ul {
+        padding-left: 1.5rem;
     }
 }

@@ -1,5 +1,9 @@
 /* Gallery */
-#gallery {}
+#gallery img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
 
 #gallery h1 {
     font-family: "DancingScript", cursive;
@@ -11,5 +15,10 @@
     #gallery h1 {
         font-size: 36px;
         padding-bottom: 0;
+    }
+
+    #gallery img {
+        max-height: 200px;
+        object-fit: cover;
     }
 }
