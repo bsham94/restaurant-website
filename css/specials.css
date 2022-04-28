@@ -7,6 +7,7 @@
     background-position: center center;
     background-attachment: fixed;
     height: 100vh;
+    min-height: 900px;
 }
 
 #specials .carousel,
@@ -20,6 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 #specials h1 {
@@ -32,12 +34,18 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .promotion-img {
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    top: 0;
+}
 
+.img-fluid {
+    height: 100%;
 }
 
 .promotion-details {
@@ -73,5 +81,14 @@
     #specials h1 {
         font-size: 36px;
         padding-bottom: 0;
+    }
+
+    #specials {
+        min-height: 400px;
+    }
+
+    .promotion-img {
+        height: 100%;
+        width: 100%;
     }
 }
