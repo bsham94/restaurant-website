@@ -29,11 +29,18 @@
     border-color: #ca3d26;
 }
 
-#appetizers,
+
 #hand-helds,
-#entrees,
-#wine {
+#entrees {
     display: none;
+}
+
+#menus span {
+    display: inline-block;
+}
+
+.red-icon {
+    width: 80%;
 }
 
 @media only screen and (max-width: 767px) {

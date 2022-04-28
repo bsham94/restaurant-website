@@ -35,9 +35,8 @@
 }
 
 .promotion-img {
-    width: 60%;
-    height: 60%;
-    z-index: 1;
+    height: 80%;
+    width: 80%;
 }
 
 .promotion-details {
@@ -45,14 +44,28 @@
     color: black;
     z-index: 2;
     height: 300px;
-    width: 40%;
+    width: 500px;
     padding: 50px;
-    right: 20px;
 }
 
 .promotion-details .btn {
     color: #ca3d26;
     border-color: #ca3d26;
+}
+
+.promotion-details .btn:hover {
+    color: white;
+    border-color: #ca3d26;
+    background-color: #ca3d26;
+}
+
+
+#specials span {
+    display: inline-block;
+}
+
+.red-icon {
+    width: 80%;
 }
 
 @media only screen and (max-width: 767px) {

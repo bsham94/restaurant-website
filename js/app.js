@@ -41,16 +41,9 @@ showBackToTop = () => {
 };
 // Menu Animations
 $(() => {
-    $('#covid-19-takeout-btn, #appetizers-btn, #handhelds-btn, #entrees-btn, #wine-btn').on('click', (e) => {
+    $('#appetizers-btn, #handhelds-btn, #entrees-btn').on('click', (e) => {
         $("#menus ul li").removeClass("active");
         switch (e.target.id) {
-            case 'covid-19-takeout-btn':
-                $("#covid-19-takeout-btn").addClass("active");
-                if ($("#covid-19-takeout:hidden")) {
-                    $("#menu-area .menu-item:visible").fadeOut('slow');
-                    $("#covid-19-takeout").fadeIn('slow');
-                }
-                break;
             case 'appetizers-btn':
                 $("#appetizers-btn").addClass("active");
                 if ($("#appetizers:hidden")) {
@@ -70,13 +63,6 @@ $(() => {
                 if ($("#entrees:hidden")) {
                     $("#menu-area .menu-item:visible").fadeOut('slow');
                     $("#entrees").fadeIn('slow');
-                }
-                break;
-            case 'wine-btn':
-                $("#wine-btn").addClass("active");
-                if ($("#wine:hidden")) {
-                    $("#menu-area .menu-item:visible").fadeOut('slow');
-                    $("#wine").fadeIn('slow');
                 }
                 break;
         }
