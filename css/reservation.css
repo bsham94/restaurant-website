@@ -5,7 +5,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
     font-family: "PTSansNarrow", sans-serif;
     height: 500px;
 }
@@ -36,4 +35,10 @@
     font-size: 50px;
     margin-bottom: 15px;
     font-weight: 500;
+}
+
+@media only screen and (min-width: 992px) {
+    #reservations {
+        background-attachment: fixed;
+    }
 }

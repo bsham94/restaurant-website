@@ -5,7 +5,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
     height: 100vh;
     min-height: 900px;
 }
@@ -38,7 +37,7 @@
 }
 
 #specials .img {
-    /* height: 90%; */
+    height: 90%;
     width: 70%;
     position: absolute;
     top: 0;
@@ -73,6 +72,12 @@
     width: 80%;
 }
 
+@media only screen and (min-width: 992px) {
+    #specials {
+        background-attachment: fixed;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     #specials h1 {
         font-size: 36px;
@@ -84,14 +89,14 @@
     }
 
     #specials .img {
-        /* height: 100%; */
+        height: 100%;
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 600px) {
     #specials .img {
-        /* height: 350px; */
+        height: 350px;
         width: 100%;
     }
 }
