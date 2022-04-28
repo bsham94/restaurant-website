@@ -37,15 +37,11 @@
     justify-content: center;
 }
 
-.promotion-img {
-    height: 100%;
+#specials .img {
+    height: 90%;
     width: 70%;
     position: absolute;
     top: 0;
-}
-
-.img-fluid {
-    height: 100%;
 }
 
 .promotion-details {
@@ -87,7 +83,7 @@
         min-height: 400px;
     }
 
-    .promotion-img {
+    #specials .img {
         height: 100%;
         width: 100%;
     }
