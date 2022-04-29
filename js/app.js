@@ -6,10 +6,10 @@ $(() => {
     //     var height = $('#specials .carousel-inner').height() - 80;
     //     $('#specials .img').height(height);
     // }
-    if ($(window).width() < 767) {
-        var height = $('#specials .carousel-caption').height() - 20 + "px";
-        $('#specials .img').css({ "max-height": height });
-    }
+    // if ($(window).width() < 767) {
+    //     var height = $('#specials .carousel-caption').height() - 20 + "px";
+    //     $('#specials .img').css({ "max-height": height });
+    // }
 });
 
 onScroll = () => {

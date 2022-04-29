@@ -6,7 +6,7 @@
     background-size: cover;
     background-position: center center;
     height: 100vh;
-    /* min-height: 900px; */
+    min-height: 900px;
 }
 
 #specials .carousel,
@@ -91,9 +91,9 @@
         padding-bottom: 0;
     }
 
-    /* #specials {
-        min-height: 700px;
-    } */
+    #specials {
+        min-height: 500px;
+    }
 
     #specials .img {
         height: 85%;
