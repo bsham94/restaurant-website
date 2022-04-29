@@ -3,12 +3,13 @@ $(() => {
     showBackToTop();
     $(document).on("scroll", onScroll);
     // if ($(window).width() < 992) {
-    //     var height = $('#specials .carousel-inner') - 100;
+    //     var height = $('#specials .carousel-inner').height() - 80;
     //     $('#specials .img').height(height);
     // }
-    // if ($(window).width() < 900) {
-    //     $('#specials .img').height(350);
-    // }
+    if ($(window).width() < 992) {
+        var height = $('#specials .carousel-caption').height() + "px";
+        $('#specials .img').css({ "max-height": height });
+    }
 });
 
 onScroll = () => {
