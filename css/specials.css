@@ -78,6 +78,13 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    #specials .img {
+        height: 350px;
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     #specials h1 {
         font-size: 36px;
@@ -90,13 +97,6 @@
 
     #specials .img {
         height: 100%;
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #specials .img {
-        height: 350px;
         width: 100%;
     }
 }

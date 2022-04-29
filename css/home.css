@@ -2,7 +2,7 @@
 #carousel .carousel,
 #carousel .carousel-inner,
 #carousel .carousel-item {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .carousel-caption h1 {
