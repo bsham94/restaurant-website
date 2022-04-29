@@ -2,9 +2,12 @@ $(() => {
     changeNavColour();
     showBackToTop();
     $(document).on("scroll", onScroll);
-    if ($(window).width() < 992) {
-        var height = $('#specials .carousel-inner') - 100;
-        $('#specials .img').height(height);
+    // if ($(window).width() < 992) {
+    //     var height = $('#specials .carousel-inner') - 100;
+    //     $('#specials .img').height(height);
+    // }
+    if ($(window).width() < 600) {
+        $('#specials .img').height(350);
     }
 });
 
