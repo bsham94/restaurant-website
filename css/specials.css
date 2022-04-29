@@ -78,12 +78,12 @@
     }
 }
 
-@media only screen and (max-width: 700px) {
+/* @media only screen and (max-width: 700px) {
     #specials .img {
         height: 350px;
         width: 100%;
     }
-}
+} */
 
 @media only screen and (max-width: 767px) {
     #specials h1 {
@@ -96,7 +96,7 @@
     }
 
     #specials .img {
-        height: 100%;
+        /* height: 100%; */
         width: 100%;
     }
 }
