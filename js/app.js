@@ -6,9 +6,9 @@ $(() => {
     //     var height = $('#specials .carousel-inner') - 100;
     //     $('#specials .img').height(height);
     // }
-    if ($(window).width() < 600) {
-        $('#specials .img').height(350);
-    }
+    // if ($(window).width() < 900) {
+    //     $('#specials .img').height(350);
+    // }
 });
 
 onScroll = () => {
