@@ -2,14 +2,6 @@ $(() => {
     changeNavColour();
     showBackToTop();
     $(document).on("scroll", onScroll);
-    // if ($(window).width() < 992) {
-    //     var height = $('#specials .carousel-inner').height() - 80;
-    //     $('#specials .img').height(height);
-    // }
-    // if ($(window).width() < 767) {
-    //     var height = $('#specials .carousel-caption').height() - 20 + "px";
-    //     $('#specials .img').css({ "max-height": height });
-    // }
 });
 
 onScroll = () => {
@@ -76,58 +68,3 @@ $(() => {
         }
     });
 });
-
-// $(() => {
-//     var homeCarousel = $('#carousel');
-//     var carousel = new bootstrap.Carousel(homeCarousel);
-// })
-// Adds or removes the active link class for the Navbar
-// $(() => {
-//     $(".nav-link").on('click', (e) => {
-//         // remove classes from all
-//         $(".nav-link").removeClass("active");
-//         // add class to the one we clicked
-//         $(e.target).addClass("active");
-//     });
-// });
-//Smooth Scroll
-// $(() => {
-//     changeNavColour();
-//     showBackToTop()
-//     $(document).on("scroll", onScroll);
-//     $('.navbar-custom a[href^="#"]').on('click', function (e) {
-//         e.preventDefault();
-//         $(document).off("scroll");
-
-//         $('.nav-link').each(function () {
-//             $(this).removeClass('active');
-//         })
-//         $(this).addClass('active');
-//         //Gets href part of a tag
-//         var target = this.hash;
-//         $target = $(target);
-//         $('html, body').stop().animate(
-//             {
-//                 'scrollTop': $target.offset().top + 5
-//             },
-//             {
-//                 duration: 700,
-//                 easing: 'swing',
-//                 step: (a, b) => {
-//                     changeNavColour();
-//                 },
-//                 progress: (a, p, mR) => {
-//                     if (mR <= 550) {
-//                         if ($(".navbar-custom scrolled")) {
-//                             $(".navbar-custom").addClass("scrolled");
-//                         }
-//                     }
-//                 },
-//                 complete: () => {
-//                     window.location.hash = target;
-//                     $(document).on("scroll", onScroll);
-//                 }
-//             });
-
-//     });
-// });
