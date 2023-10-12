@@ -1,2 +1,2 @@
 # restaurant-website
-Basic Restaurant website layout I create for Little Ding's Pizza & Sports.
+Basic single paged website layout I create for Little Ding's Pizza & Sports restaurant.
